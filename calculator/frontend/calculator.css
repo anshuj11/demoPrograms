@@ -1,0 +1,30 @@
+.Calc {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px;
+  font-size: 20px;
+  border: none;
+  background-color: #efefef;
+}
+.Inputs {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.InputBox {
+  width: 50px;
+  height: 20px;
+}
