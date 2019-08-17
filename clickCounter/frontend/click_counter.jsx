@@ -1,4 +1,5 @@
 import React from "react";
+import PrevClicks from "./prev_clicks";
 
 class ClickCounter extends React.Component {
   constructor(props) {
@@ -25,9 +26,7 @@ class ClickCounter extends React.Component {
         <div>{this.state.count}</div>
         <button onClick={this.handleReset.bind(this)}>Reset</button>
         <div>
-          {this.state.prevClk.map(clk => (
-            <li>{clk}</li>
-          ))}
+                <PrevClicks data={this.state.prevClk}/>
         </div>
       </div>
     );
