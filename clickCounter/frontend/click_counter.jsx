@@ -24,7 +24,11 @@ class ClickCounter extends React.Component {
         <button onClick={this.handleClick.bind(this)}>Click Me!</button>
         <div>{this.state.count}</div>
         <button onClick={this.handleReset.bind(this)}>Reset</button>
-            <div>{this.state.prevClk[0]}</div>
+        <div>
+          {this.state.prevClk.map(clk => (
+            <li>{clk}</li>
+          ))}
+        </div>
       </div>
     );
   }
